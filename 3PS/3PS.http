@@ -1,0 +1,6 @@
+@_3PS_HostAddress = http://localhost:5168
+
+GET {{_3PS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
