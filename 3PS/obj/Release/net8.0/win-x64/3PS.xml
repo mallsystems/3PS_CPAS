@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>3PS</name>
+    </assembly>
+    <members>
+        <member name="T:_3PS.Controllers.ReportingController">
+            <summary>
+            Handles operations related to reporting.
+            </summary>
+        </member>
+        <member name="M:_3PS.Controllers.ReportingController.PostVaccineReport(_3PS.Models.Reporting.VaccineReporting)">
+            <summary>
+            Submits a new vaccine report to be saved.
+            </summary>
+            <remarks>
+            This endpoint receives vaccine report details and persists them.
+            Note: This saves data using the VaccineReporting model, which is configured
+            in the DbContext to map to the "DBA - VaccineBatchSendReport" table
+            using the string 'RECNUM' property as the key.
+            </remarks>
+            <param name="report">The vaccine report data based on the VaccineReporting model.</param>
+            <returns>A status code indicating the result of the operation.</returns>
+            <response code="200">Report successfully created. Returns the RECNUM.</response>
+            <response code="400">Bad Request. The report data was null or invalid.</response>
+            <response code="500">Internal Server Error. An error occurred processing the request.</response>
+        </member>
+        <member name="T:_3PS.Controllers.VaccineController">
+            <summary>
+            Provides endpoints for accessing vaccine-related data, such as batch send information.
+            </summary>
+        </member>
+        <member name="M:_3PS.Controllers.VaccineController.GetVaccineBatchSendData(System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Gets records from the vaccine batch send data source with pagination and optional filtering.
+            </summary>
+            <remarks>
+            Retrieves data corresponding to the VwVaccineBatchSend model (sourced from DbContext configuration).
+            Supports filtering by the 'SendingBatch' number.
+            Results are ordered by Ticket number.
+            <br/>
+            **Pagination:**
+            - Uses query parameters `pageNumber` and `pageSize`.
+            - Default page size is 10, maximum is 50. Invalid sizes are clamped to the nearest valid value.
+            - Pagination metadata is returned in custom 'X-Pagination-*' response headers. Ensure your client is configured to read these headers (requires 'Access-Control-Expose-Headers').
+            </remarks>
+            <param name="batch">Optional: Filter records by the 'SendingBatch' number.</param>
+            <param name="pageNumber">The page number to retrieve (must be 1 or greater, defaults to 1 if invalid).</param>
+            <param name="pageSize">The number of items per page (must be between 1 and 50, defaults to 10, clamped if invalid).</param>
+            <returns>A paginated list of vaccine batch send records.</returns>
+            <response code="200">Returns the requested page of vaccine batch send records. Pagination details are in the 'X-Pagination-*' headers.</response>
+            <response code="400">Bad Request. Indicates an issue with the request parameters (though this implementation often defaults/clamps instead of returning 400 for simple range errors).</response>
+            <response code="500">Internal Server Error. An error occurred while retrieving the data.</response>
+        </member>
+    </members>
+</doc>
