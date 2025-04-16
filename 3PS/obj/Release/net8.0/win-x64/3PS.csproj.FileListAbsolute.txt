@@ -382,3 +382,16 @@ C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Release\net8.0\win-x64\refint\3PS.dll
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Release\net8.0\win-x64\3PS.pdb
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Release\net8.0\win-x64\3PS.genruntimeconfig.cache
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Release\net8.0\win-x64\ref\3PS.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.AspNetCore.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Extensions.Hosting.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Extensions.Logging.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Formatting.Compact.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Settings.Configuration.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Sinks.Async.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Sinks.Console.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Sinks.Debug.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\Serilog.Sinks.File.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Release\net8.0\win-x64\3PS.xml
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Release\net8.0\win-x64\3PS.xml

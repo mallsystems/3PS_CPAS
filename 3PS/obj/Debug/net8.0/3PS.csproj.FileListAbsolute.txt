@@ -100,3 +100,5 @@ C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Debug\net8.0\Serilog.Sinks.Async.dll
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\bin\Debug\net8.0\3PS.xml
+C:\Users\Admin\Desktop\3PS_CPAS\3PS\obj\Debug\net8.0\3PS.xml

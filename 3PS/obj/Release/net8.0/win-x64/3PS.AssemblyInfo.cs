@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3PS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f257ccae77784ce55c3afd5f13c530c4f96df514")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190e1b1326610c964ac56dc5435b71625c592ffb")]
 [assembly: System.Reflection.AssemblyProductAttribute("3PS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3PS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

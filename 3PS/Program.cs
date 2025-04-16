@@ -1,6 +1,7 @@
 using _3PS.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Reflection;
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(new ConfigurationBuilder()
@@ -35,7 +36,21 @@ try
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
+    builder.Services.AddSwaggerGen(options =>
+    {
+        var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+
+        if (File.Exists(xmlPath))
+        {
+            options.IncludeXmlComments(xmlPath);
+            Log.Information("SwaggerGen configured to use XML comments from: {XmlPath}", xmlPath);
+        }
+        else
+        {
+            Log.Warning("XML comments file not found at: {XmlPath}. Swagger documentation may be incomplete.", xmlPath);
+        }
+    });
 
     var app = builder.Build();
 
